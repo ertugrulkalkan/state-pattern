@@ -19,18 +19,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\state_machine\state_machine\Context.h" />
-    <ClInclude Include="..\..\state_machine\state_machine\IdleState.h" />
-    <ClInclude Include="..\..\state_machine\state_machine\State.h" />
-    <ClInclude Include="..\..\state_machine\state_machine\StateAll.h" />
-    <ClInclude Include="..\..\state_machine\state_machine\WorkState.h" />
+    <ClCompile Include="Context.cpp" />
+    <ClCompile Include="IdleState.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="State.cpp" />
+    <ClCompile Include="WorkState.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\state_machine\state_machine\Context.cpp" />
-    <ClCompile Include="..\..\state_machine\state_machine\IdleState.cpp" />
-    <ClCompile Include="..\..\state_machine\state_machine\main.cpp" />
-    <ClCompile Include="..\..\state_machine\state_machine\State.cpp" />
-    <ClCompile Include="..\..\state_machine\state_machine\WorkState.cpp" />
+    <ClInclude Include="Context.h" />
+    <ClInclude Include="IdleState.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="StateMachine.h" />
+    <ClInclude Include="WorkState.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
