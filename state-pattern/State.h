@@ -17,7 +17,6 @@ public:
 	virtual ~State();
 
 	virtual void cyclicJob() = 0;
-	virtual void eventHandler() = 0;
 	virtual void messageHandler(const std::string& message) = 0;
 
 	const std::string& getStateName();

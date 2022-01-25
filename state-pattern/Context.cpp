@@ -26,9 +26,12 @@ void Context::transitionTo(State *state)
 
 void Context::run()
 {
-	context_lock.lock();
-	this->m_pState->cyclicJob();
-	context_lock.unlock();
+	while(true)
+	{
+		context_lock.lock();
+		this->m_pState->cyclicJob();
+		context_lock.unlock();
+	}
 }
 
 void Context::message(const std::string& message)

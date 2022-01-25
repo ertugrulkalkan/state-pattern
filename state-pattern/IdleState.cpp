@@ -13,11 +13,6 @@ void IdleState::cyclicJob()
     std::cout << "Cyclic Job of " << this->m_StateName << std::endl;
 }
 
-void IdleState::eventHandler()
-{
-    std::cout << "Event Handler of " << this->m_StateName << std::endl;
-}
-
 void IdleState::messageHandler(const std::string& message)
 {
     if (message == "work")
