@@ -9,7 +9,10 @@ class Context
 {
 private:
 	State *m_pState;
+	std::thread *m_Thread;
+	bool m_Run;
 
+	void loop();
 	std::mutex context_lock;
 public:
 	Context(nullptr_t) = delete;
@@ -25,6 +28,8 @@ public:
 	void transitionTo(nullptr_t) = delete;
 
 	void run();
+	void stop();
+	
 	void message(const std::string& message);
 
 };
